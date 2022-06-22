@@ -52,6 +52,12 @@ export default function Home(){
             <p>{err}</p>
             <CarForm 
             handleSubmit={handleSubmit}
+            initialForm={{
+                make: '',
+                model: '',
+                year: '',
+                type: '',
+            }}
             />
             {carList}
         </div>

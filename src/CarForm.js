@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-export default function CarForm({ handleSubmit }){
-    const [form, setForm] = useState({})
+export default function CarForm({ handleSubmit, initialForm }){
+    const [form, setForm] = useState(initialForm)
     return(
         <div>
             <form onSubmit={e => handleSubmit(e, form, setForm)}>
